@@ -32,7 +32,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Bizmate\\PhpTestDto": "src/"
+            "Bizmate\\PhpTestDto\\": "src/"
         }
     },
     "autoload-dev": {
