@@ -1,0 +1,9 @@
+###> composer
+/vendor/
+###< composer ###
+
+.idea
+composer.lock
+
+# CI
+reports
