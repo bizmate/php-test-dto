@@ -45,7 +45,7 @@ class ReviewList
     /**
      * @return ArrayCollection
      */
-    public function getReviews()
+    public function getReviewList()
     {
         return $this->reviewList;
     }
