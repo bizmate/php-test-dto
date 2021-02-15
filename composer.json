@@ -21,8 +21,8 @@
         "phpmetrics/phpmetrics": "^2.7",
         "phpunit/phpunit": "^6.5",
         "sebastian/phpcpd": "^3.0",
-        "sensiolabs/security-checker": "^5.0",
-        "squizlabs/php_codesniffer": "^3.5"
+        "squizlabs/php_codesniffer": "^3.5",
+        "thibautselingue/local-php-security-checker-installer": "^1.0"
     },
     "config": {
         "preferred-install": {
@@ -38,6 +38,11 @@
     "autoload-dev": {
         "psr-4": {
             "Bizmate\\PhpTestDto\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "auto-scripts": {
+            "local-php-security-checker-installer && local-php-security-checker": "script"
         }
     }
 }
