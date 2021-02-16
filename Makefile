@@ -35,7 +35,8 @@ phpcbf:
 	docker-compose run --rm php bash -c "vendor/bin/phpcbf --ignore=vendor --standard=PSR2 -n src"
 
 securitychecker:
-	docker-compose run --rm php bash -c "vendor/bin/local-php-security-checker"
+	docker-compose run --rm composer bash -c "vendor/bin/local-php-security-checker-installer"
+	docker-compose run --rm composer bash -c "vendor/bin/local-php-security-checker"
 
 docker_clean:
 	docker rm $(docker ps -a -q) || true

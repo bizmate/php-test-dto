@@ -17,9 +17,7 @@ services:
     user: $UID
     volumes:
       - websrc:/app
-      - ${COMPOSER_HOME}:/home/composer/.config/composer
-      - ${COMPOSER_CACHE_DIR}:/home/composer/.cache/composer
-      - ${HOME}/.gitconfig:/home/composer/.gitconfig:Z
+
     command: composer install --dev
     working_dir: /app
     environment:
